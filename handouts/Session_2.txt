@@ -1,0 +1,40 @@
+# Installation of the software under cygwin...
+
+* Install Cygwin using the default options; besides the default packages, you should also install:
+  - gcc-core
+  - git
+  - python3
+  - python3-devel
+  - wget
+
+* Install `pip`, for Python packages, with the following commands:
+  - wget https://bootstrap.pypa.io/get-pip.py
+  - python3 get-pip.py
+
+* Make sure you are on your home directory:
+  - cd ~
+
+* Clone the CLDF repository
+  - git clone https://github.com/cldf/cldf.git
+
+* Install and configure `lingpy`
+  - pip3 install lingpy
+  - python3 -c "import lingpy"
+
+* Install Concepticon:
+  - git clone https://github.com/clld/concepticon-data.git
+  - pip3 install -e concepticon-data/
+
+* Install Glottolog:
+  - git clone https://github.com/clld/glottolog.git
+  - pip3 install -e glottolog/
+
+* Install CLTS:
+  - git clone https://github.com/clld/clts.git
+  - pip3 install -e clts/
+
+* Install `csvkit` (useful for manipulating tabular data)
+  - pip3 install csvkit
+
+You're ready to go!
+
