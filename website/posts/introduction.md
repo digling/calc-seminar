@@ -4,7 +4,7 @@
 
 ## What this Website is Supposed to Do
 
-This website should provide orientation to the participants of the lecture on computer-assisted language comparison. It also offers certain documents which cannot be openly shared and are therefore password protected.
+This website should provide orientation to the participants of the [lecture on computer-assisted language comparison](https://friedolin.uni-jena.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=146466&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung) held at the institute for Anglistics and Americanistics at the FSU Jena. It also offers certain documents which cannot be openly shared and are therefore password protected.
  
 ## Our GitHub Repository
 
