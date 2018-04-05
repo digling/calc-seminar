@@ -1,0 +1,6 @@
+.htaccess
+.htusers
+*.pdf
+*.swp
+website/handouts/
+.ipynb_checkpoints/
