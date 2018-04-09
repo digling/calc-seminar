@@ -1,0 +1,66 @@
+\documentclass[xetex]{scrartcl}
+
+% packages
+\usepackage{xltxtra}
+\usepackage{polyglossia}
+\usepackage{lsalike}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{covington}
+\usepackage{scrpage2}
+\usepackage{qtree}
+\usepackage[left=2.5cm,right=2.5cm,top=3.5cm,bottom=3.5cm]{geometry}
+\usepackage{hieroglf}
+\usepackage[weather,misc,alpine]{ifsym}
+\usepackage{pst-node}
+\usepackage{colortbl}
+\usepackage{alltt}
+\usepackage{listings}
+\usepackage{multirow}
+
+% fonts general
+\setmainfont[Mapping=tex-text,Scale=1.0]{FreeSans}
+\setsansfont[Mapping=tex-text,Scale=1.0]{FreeSans}
+\setmonofont{FreeMono}
+
+% special fonts
+\newfontfamily\hana{HAN NOM A}
+\newfontfamily\hanb{HAN NOM B}
+\newfontfamily\sil{Charis SIL}
+\newfontfamily\grk{Aristarcoj}
+\newfontfamily\calligraphy{Chinese Calligraphy}
+\newfontfamily\pur{Purisa}
+
+
+\newcommand{\White}[1]{\cellcolor{white} \textcolor{black}{ #1}}
+
+% language settings
+\setmainlanguage[spelling=new]{german}
+\setotherlanguage{english}
+
+% pagestyle settings
+\pagestyle{scrheadings}
+\ihead{Johann-Mattis List}
+\chead{CALC Seminar}
+\ohead{2018-04-10}
+\ifoot{}
+\cfoot{\pagemark}
+\ofoot{}
+
+
+
+\begin{document}
+%\maketitle
+
+\begin{center}
+    {\bf \huge  Introduction to Computer-Assisted Language Comparison}
+\end{center}
+\input{Session_1.tex}
+
+%\section*{Literatur}
+%\bibliographystyle{lsalike}
+%\renewcommand\refname{Literatur}
+\renewcommand{\section}[2]{}
+%\bibliography{/home/mattis/Dropbox/EvoClass/bibliography/evoclass}
+\end{document}
+

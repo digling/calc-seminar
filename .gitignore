@@ -4,3 +4,7 @@
 *.swp
 website/handouts/
 .ipynb_checkpoints/
+x.tex
+*.aux
+*.log
+*.out
