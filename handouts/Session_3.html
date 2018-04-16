@@ -12299,6 +12299,64 @@ NUMBER  ENGLISH CONCEPTICON_ID  CONCEPTICON_GLOSS   SIMILARITY
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="5.5-Example-process-:-contributing-to-Concepticon">5.5 Example process : contributing to Concepticon<a class="anchor-link" href="#5.5-Example-process-:-contributing-to-Concepticon">&#182;</a></h3><ol>
+<li>Prepare data, make sure the columns are in the order of 'ID','NUMBER', 'ENGLISH'</li>
+<li><p>Fork and then clone the repository.</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> git clone your/own/concepticon-data/url
+</pre></div>
+</li>
+<li><p>Mapping with concepticon.</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> concepticon map_concepts <span class="o">[</span>FILE NAME<span class="o">]</span> &gt; <span class="o">[</span>OUTPUT<span class="o">]</span>
+</pre></div>
+</li>
+<li><p>Clean the output file and then move this file into the concept folder. <strong>Please name the file as [First Author]-[Year]-[Concept Number], eg. Marrison-1967-909</strong></p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> mv <span class="o">[</span>mapped file<span class="o">]</span> ~/concepticon-data/concepticondata/.
+</pre></div>
+</li>
+<li><p>Adding new concepts to the <strong>concepticon.tsv</strong></p>
+</li>
+<li><p>Adding new meta data to the <strong>conceptlists.tsv</strong></p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> awk <span class="s2">&quot;NR==2{print </span><span class="nv">$0</span><span class="s2">}&quot;</span> <span class="o">[</span>META DATA FILE<span class="o">]</span> &gt;&gt; ~/concepticon-data/concepticondata/conceptlists.tsv
+</pre></div>
+</li>
+<li><p>Adding new reference (bibtex format) to the <strong>references.bib</strong></p>
+</li>
+<li><p>Run a test.</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> concepticon <span class="nb">test</span>
+</pre></div>
+</li>
+<li><p>Push to GitHub</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> git commit -a 
+<span class="gp">$</span> git push origin master
+</pre></div>
+</li>
+<li><p>Navigate to your github repository, press <strong>New pull request</strong></p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="5.6-Useful-resources-when-cleaning-the-data">5.6 Useful resources when cleaning the data<a class="anchor-link" href="#5.6-Useful-resources-when-cleaning-the-data">&#182;</a></h3><p>There are times that we are not sure which concepticon concepts are the appropriate ones. The following websites can assist you to find the good matches.</p>
+<ol>
+<li>Concepticon Lookup : <a href="http://calc.digling.org/concepticon/">http://calc.digling.org/concepticon/</a></li>
+<li>Glosbe online dictionary : <a href="https://glosbe.com/">https://glosbe.com/</a></li>
+<li>STEDT (if your data is collected from this database) : <a href="http://stedt.berkeley.edu/~stedt-cgi/rootcanal.pl/source/GEM-CNL">http://stedt.berkeley.edu/~stedt-cgi/rootcanal.pl/source/GEM-CNL</a></li>
+<li>Longman dictionary: <a href="https://www.ldoceonline.com/">https://www.ldoceonline.com/</a></li>
+<li>Original articles. </li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="6-Caveats">6 Caveats<a class="anchor-link" href="#6-Caveats">&#182;</a></h2><p>When linking to the Concepticon, we have found that it may be difficult for scholars to understand by which principle they should guide the way they link concepts. Usually, scholars assume that they NEED to find some link at any cost, even if it is not there. 
 As a general rule, however, scholars should do the opposite: if their eliciation gloss denotes a specific meaning that cannot be found (yet) in Concepticon, they should <strong>never</strong> link it to some approximate similar concept set, but rather leave the item unlinked instead. If scholars find that the concept is important, they can file an issue on GitHub and ask to include it, or alternatively make a pull-request on GitHub and include it themselves. There are some further cases that are difficult when dealing with Concepticon mappings. These are based on (a) translation problems and the original "meaning" of an eliciation gloss (as opposed to its apparent meaning in its surface form), (b) how to handle approximate linkings, and (c) how to "read" the definitions we provide in the Concepticon project. In the following, we will briefly discuss these point separately, providing examples.</p>
 <h3 id="Translation-problems-and-the-&quot;original-meaning&quot;-of-an-eliciation-gloss">Translation problems and the "original meaning" of an eliciation gloss<a class="anchor-link" href="#Translation-problems-and-the-&quot;original-meaning&quot;-of-an-eliciation-gloss">&#182;</a></h3><p>When inspecting a concept list that list as its English eliciation gloss the word "blunt", the obvious guess is that this should refer to <a href="http://concepticon.clld.org/parameters/379">BLUNT</a>, i.e.:</p>
