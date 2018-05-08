@@ -11776,7 +11776,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Cross-Linguistic-Transcription-Systems-(Cormac-Anderson,-Johann-Mattis-List,-Tiago-Tresoldi)">Cross-Linguistic Transcription Systems (Cormac Anderson, Johann-Mattis List, Tiago Tresoldi)<a class="anchor-link" href="#Cross-Linguistic-Transcription-Systems-(Cormac-Anderson,-Johann-Mattis-List,-Tiago-Tresoldi)">&#182;</a></h1><h2 id="1-Introduction">1 Introduction<a class="anchor-link" href="#1-Introduction">&#182;</a></h2><p>As we discussed when dealing with Concepticon in Session 3, contrary to what non-practitioners might expect, the systems of phonetic notation used by linguists are highly idiosyncratic. Not only do various linguistic subfields disagree on the specific symbols they use to denote the speech sounds of languages, but also in large databases of sound inventories considerable variation can be found. Inspired by other efforts to link cross-linguistic data with help of reference catalogues (such as Glottolog and Concepticon) across different resources, we have also focused in linking different phonetic notation systems to a catalogue of speech sounds. This is achieved with the help of a database accompanied by a software framework that uses a limited but easily extendable set of non-binary feature values to allow for quick and convenient registration of different transcription systems, while at the same time linking to additional datasets with restricted inventories. Linking different transcription systems enables us to conveniently translate between different phonetic transcription systems, linking sounds to databases allows users quick access to various kinds of metadata, including feature values, statistics on phoneme inventories, and information on prosody and sound classes.</p>
-<p>Phonetic transcription has a long tradition in historical linguistics. Efforts to design a unified transcription system capable of representing and distinguishing all the sounds in the languages of the world go back to the late 19th century, culminating with the efforts of the International Phonetic Association (see <a href="http://bibliography.lingpy.org/?key=Kalusky2017">Kalusky 2017:7f</a>. In contrast to writing systems targeted at encoding the speech of a single language variety in a visual medium, phonetic transcription aims at representing different kinds of speech in a unified system, which ideally would enable those trained in the system to reproduce foreign speech directly.
+<p>Phonetic transcription has a long tradition in historical linguistics. Efforts to design a unified transcription system capable of representing and distinguishing all the sounds in the languages of the world go back to the late 19th century, culminating with the efforts of the International Phonetic Association (see <a href="http://bibliography.lingpy.org/?key=Kalusky2017">Kalusky 2017:7f</a>). In contrast to writing systems targeted at encoding the speech of a single language variety in a visual medium, phonetic transcription aims at representing different kinds of speech in a unified system, which ideally would enable those trained in the system to reproduce foreign speech directly.
 Apart from the primary role which phonetic transcription plays in teaching foreign languages, it is also indispensable for the purposes of language comparison, both typological and historical. In this sense, the symbols which scholars use in order to transcribe speech sounds, that is, the graphemes, which we understand as sequences of one or more glyphs, serve as comparative concepts in the sense of <a href="http://bibliography.lingpy.org/?key=Haspelmath2010">Haspelmath (2010)</a>. While the usefulness of phonetic transcription may be evident to typologists interested in the diversity of speech sounds (although see critiques of this approach to phonological typology, i.a. Simpson (<a href="http://bibliography.lingpy.org/?key=Simpson1999">1999</a>), the role of unified transcription systems like the International Phonetic Alphabet (IPA) is often regarded as less important in historical linguistics, where scholars often follow the algebraic tradition of <a href="http://bibliography.lingpy.org/?key=Saussure1916">Saussure (1916)</a> (already implicit in <a href="http://bibliography.lingpy.org/?key=Saussure1878">Saussure 1878</a>). This emphasises the systematic aspect of  historical language comparison, in which the distinctiveness of sound units within a system is more important than how they compare in substance across a sample of genetically related languages. If we leave the language-specific level of historical language comparison, however, and investigate general patterns of sound change in the languages of the world, it is obvious that this can only be done with help of comparable transcription systems serving as comparative concepts.</p>
 <p>When dealing with phonetic transcriptions, it is useful to distinguish <em>transcription systems</em> from <em>transcription data</em>. The former describe a set of symbols and rules for symbol combinations which can be used to represent speech in the medium of writing, while the latter result from the application of a given transcription system and aim at displaying linguistic diversity in terms of sound inventories or lexical datasets. While transcription systems are generative in that they can be used to encode sounds by combining the basic material, transcription data are static and fixed in size (at least for a given version published at a certain point in time). Transcription data have become increasingly important, with recent efforts to provide cross-linguistic accounts of sound inventories (<a href="http://bibliography.lingpy.org/?key=Moran2014">Moran et al. 2014</a>, <a href="http://bibliography.lingpy.org/?key=Maddieson2013">Maddieson et al. 2013</a>), but in some sense, we can say that every dictionary or word list that aims at representing the pronunciation of a language can be considered as transcription data in a broad sense.</p>
 
@@ -12407,6 +12407,7 @@ The following table gives examples for typical confusables.</p>
 </tr>
 </tbody>
 </table>
+<p><img src="img/clts_site.png" alt="CLTS Site"></p>
 <h4 id="Python-API-and-Online-Database">Python API and Online Database<a class="anchor-link" href="#Python-API-and-Online-Database">&#182;</a></h4><p>CLTS comes with a Python API which can be used from the command line or within Python scripts and offers a convenient way to test the framework both on large datasets and on an ad-hoc basis. It comes along with a brief tutorial introducing the main aspects of the code as well as a “cookbook” containing a series of coding recipes to address specific tasks. The data is further presented online in the form of a database in the well-known Cross-Linguistically Linked Data framework (<a href="http://clld.org">http://clld.org</a>, <a href="http://bibliography.lingpy.org/?key=Haspelmath2015">Haspelmath and Forkel 2015</a>) which provides interested users with the common look-and-feel of popular CLLD datasets such as Glottolog or WALS.</p>
 <p>More information on both of these aspects will be provided in the following section.</p>
 
@@ -12425,10 +12426,338 @@ The following table gives examples for typical confusables.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="img/clts_site.png" alt="CLTS Site"></p>
+<p>In the following box we are going to demonstrate how CLTS can be used from a programmer's point of view. This code was actually run in this notebook, so what you see is the actual output.</p>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># load pyclts and define two transcription system</span>
+<span class="kn">from</span> <span class="nn">pyclts</span> <span class="k">import</span> <span class="n">TranscriptionSystem</span><span class="p">,</span> <span class="n">SoundClasses</span>
+
+<span class="n">bipa</span> <span class="o">=</span> <span class="n">TranscriptionSystem</span><span class="p">()</span> <span class="c1"># default, broad IPA</span>
+<span class="n">asjp</span> <span class="o">=</span> <span class="n">TranscriptionSystem</span><span class="p">(</span><span class="s1">&#39;asjpcode&#39;</span><span class="p">)</span> <span class="c1"># asjp transcription system</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># compare the voiceless alveolar sibilant affricate in bipa...</span>
+<span class="n">snd1</span> <span class="o">=</span> <span class="n">bipa</span><span class="p">[</span><span class="s1">&#39;ts&#39;</span><span class="p">]</span>
+<span class="n">snd1</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[2]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;voiceless alveolar sibilant affricate consonant&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># ... and in asjp</span>
+<span class="n">snd2</span> <span class="o">=</span> <span class="n">asjp</span><span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">]</span>
+<span class="n">snd2</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[3]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;voiceless alveolar sibilant affricate consonant&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># translate from bipa to asjp...</span>
+<span class="n">bipa</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="s1">&#39;ts a ŋ ə&#39;</span><span class="p">,</span> <span class="n">asjp</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[4]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;c E N 3&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># ... and from asjp to bipa</span>
+<span class="n">asjp</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="s1">&#39;C a y&#39;</span><span class="p">,</span> <span class="n">bipa</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[5]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;tʃ ɐ j&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You can see that internally, we represent the sounds <code>ts</code> and <code>c</code>, depending on the alphabet from which they are taken.</p>
+<p>Another example is to parse a sound that is not yet in our database. We will try to create this sound automatically and infer its features from the set of diacritics and the base sound:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sound</span> <span class="o">=</span> <span class="n">bipa</span><span class="p">[</span><span class="s1">&#39;dʱʷ&#39;</span><span class="p">]</span>
+<span class="n">sound</span><span class="o">.</span><span class="n">name</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[6]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;labialized breathy voiced alveolar stop consonant&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You can see, since we represent breathy-voice phonation differently, we flag this sound as an alias. Also since it is not yet in our database explicitly coded, we flag it as a "generated" sound. In a similar way, you can generate sounds from their names:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sound</span> <span class="o">=</span> <span class="n">bipa</span><span class="p">[</span><span class="s1">&#39;pre-aspirated voiced aspirated bilabial stop consonant&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sound</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sound</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>ʰbʰ
+pre-aspirated aspirated voiced bilabial stop consonant
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Note that this sound probably does not exist in any language, but we generate it from the feature components. Note also that the <code>name</code> that is automatically given for the sound automatically orders how the features are put together to form the sound identifier. In principle, our features bundles are unordered, but we try to decide for some explicit order of features to enhance comparison.</p>
+<p>You can also use our transcription data to convert from one transcription system to a given dataset (note that backwards-conversion may not be possible, as transcription data is often limited):</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sca</span> <span class="o">=</span> <span class="n">SoundClasses</span><span class="p">(</span><span class="s1">&#39;sca&#39;</span><span class="p">)</span>
+<span class="n">bipa</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="s1">&#39;f a: t ə r&#39;</span><span class="p">,</span> <span class="n">sca</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[8]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;B A T E R&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>But the translation can even be done in a much simpler way, by loading the transcription data directly:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sca</span><span class="p">(</span><span class="s1">&#39;v a t ə r&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[9]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;B&#39;, &#39;A&#39;, &#39;T&#39;, &#39;E&#39;, &#39;R&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     </div>
   </div>
