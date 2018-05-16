@@ -35,11 +35,11 @@
 * **Topic:** *Cross-Linguistic Transcription Systems (CLTS)*
 * **Content:** Learn the basic problems of phonetic transcription, what CLTS offers, how it can be queried, and how it could be used from Python code or the standalone JavaScript app.
 * **Literature:** [Anderson et al. (under review)](pdf/anderson-et-al-2018-clts-draft.pdf)
-* **Lecture Notes:** [Session 5](http://htmlpreview.github.io/?https://raw.githubusercontent.com/digling/calc-seminar/master/handouts/Session_7.html)
+* **Lecture Notes:** [Session 5](http://htmlpreview.github.io/?https://raw.githubusercontent.com/digling/calc-seminar/master/handouts/Session_5.html)
 
 ## Data Formats
 
-### Session 6 on 15/05/2018 (Johann-Mattis List and Tiago Tresoldi)
+### Session 6 on 15/05/2018 (Johann-Mattis List and Christoph Rzymski)
 * **Topic:** *Cross-Linguistic Data Formats and Beyond*
 * **Content:** Introduce the [CLDF](http://cldf.clld.org) philosophy and the basic formats used by [LingPy](http://lingpy.org) and [EDICTOR](http://edictor.digling.org).
 * **Literature:** [Forkel et al. (under review)](pdf/forkel-et-al-2018-cldf-submitted.pdf)
@@ -56,7 +56,7 @@
 ### Session 8 on 29/05/2018 (Johann-Mattis List)
 * **Topic:** *Inferring, modeling, and analysing cognate sets*
 * **Content:** Introduce basic algorithms for automatic cognate detection (partial and complete), as well as basic methods for annotating them in EDICTOR. 
-* **Literature:** [List (2012)](http://aclweb.org/anthology-new/W/W12/W12-0216.pdf)
+* **Literature:** [List (2012)](http://www.aclweb.org/anthology/W12-0216)
 * **Lecture Notes:** [Session 8](http://htmlpreview.github.io/?https://raw.githubusercontent.com/digling/calc-seminar/master/handouts/Session_8.html)
 
 ## Sound Change
