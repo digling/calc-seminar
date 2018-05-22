@@ -12858,6 +12858,55 @@ m	ə	³³	-	-	-	e	³³
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's now align all data at once, using the <code>Alignments</code> class, which also offers SCA alignments.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">alm</span> <span class="o">=</span> <span class="n">Alignments</span><span class="p">(</span><span class="s1">&#39;../data/S07_toy-data.tsv&#39;</span><span class="p">,</span> <span class="n">ref</span><span class="o">=</span><span class="s1">&#39;cogid&#39;</span><span class="p">)</span>
+<span class="n">alm</span><span class="o">.</span><span class="n">align</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;progressive&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">cogid</span><span class="p">,</span> <span class="n">msa</span> <span class="ow">in</span> <span class="n">alm</span><span class="o">.</span><span class="n">msa</span><span class="p">[</span><span class="s1">&#39;cogid&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">SCA</span><span class="p">(</span><span class="n">msa</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;---&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>x	u	e	i	⁵⁵
+f	u	-	i	⁵³
+f	o	-	i	³³
+---
+-	a	³³	m	ɐ	³³
+m	ə	³³	-	e	³³
+---
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="3.1.2-Further-Information-on-LingPy-(LingPy-without-Pain)">3.1.2 Further Information on LingPy (LingPy without Pain)<a class="anchor-link" href="#3.1.2-Further-Information-on-LingPy-(LingPy-without-Pain)">&#182;</a></h4><p>In case you run into difficulties, there are some resource to guide you.</p>
 <ul>
 <li>a new tutorial on LingPy was recently published: <a href="https://github.com/lingpy/lingpy-tutorial">https://github.com/lingpy/lingpy-tutorial</a> </li>
