@@ -47,7 +47,7 @@
 
 ## Cognate Detection
 
-### Session 7 on 22/05/2018 (Johann-Mattis List)
+### Session 7 on 22/05/2018 (Johann-Mattis List and Mei-Shin Wu)
 * **Topic:** *Inferring, modeling, and analysing alignments*
 * **Content:** Introduce basic algorithms for alignments, how they are modeled in linguistics, and how one can infer them with LingPy or annotate them with EDICTOR. 
 * **Literature:** [List (2014: 61-118)](http://dup.oa.hhu.de/244/1/DLS%20%28J.-M.%20List%29%2C%20Vol.%201_Open%20Access.pdf)
