@@ -11779,16 +11779,16 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Partial-Cognate-Detection-(Johann-Mattis-List)">Partial Cognate Detection (Johann-Mattis List)<a class="anchor-link" href="#Partial-Cognate-Detection-(Johann-Mattis-List)">&#182;</a></h1><h2 id="1-What-is-Partial-Cognacy?">1 What is Partial Cognacy?<a class="anchor-link" href="#1-What-is-Partial-Cognacy?">&#182;</a></h2><p>In a very general notion, cognacy is similar to the
-concept of homology in biology (<a href=":bib:Haggerty2014">Haggerty et al. 2014</a>), denoting a relation between words which
-share a common history (<a href=":bib:List2014d">List 2014</a>). In classical linguistics, borrowings are often excluded
-from this notion (<a href=":bib:Trask2000">Trask 2000</a>). Quantitative approaches additionally distinguish cognates which
+concept of homology in biology (<a href="http://bibligraphy.lingpy.org?key=Haggerty2014">Haggerty et al. 2014</a>), denoting a relation between words which
+share a common history (<a href="http://bibligraphy.lingpy.org?key=List2014d">List 2014</a>). In classical linguistics, borrowings are often excluded
+from this notion (<a href="http://bibligraphy.lingpy.org?key=Trask2000">Trask 2000</a>). Quantitative approaches additionally distinguish cognates which
 have retained, and cognates which have shifted
 their meaning (Starostin 2013b). Further aspects
 of cognacy are rarely distinguished, although they
 are obvious and common. Words which go back to
 the same ancestor form can for example have been morphologically modified, such as French soleil
 which does not go directly back to Latin sōl 'sun
-but to <em>sōliculus</em> 'small sun' which is itself a derivation of <em>sōl</em> (<a href=":bib:Meyer-Luebke1911">Meyer-Lübke 1911</a>).</p>
+but to <em>sōliculus</em> 'small sun' which is itself a derivation of <em>sōl</em> (<a href="http://bibligraphy.lingpy.org?key=Meyer-Luebke1911">Meyer-Lübke 1911</a>).</p>
 <p>Another problem are words which have
 been created from two or more morphemes via
 processes of compounding. While these cases
@@ -11806,9 +11806,9 @@ than one morpheme challenges the notion that
 words can either be cognate or not. It poses
 problems for phylogenetic approaches which require binary presence-absence matrices as input
 and model language evolution as cognate gain and
-cognate loss (<a href=":bib:Atkinson2006">Atkinson and Gray 2006</a>).</p>
+cognate loss (<a href="http://bibligraphy.lingpy.org?key=Atkinson2006">Atkinson and Gray 2006</a>).</p>
 <p>Partial cognacy is also a problem for current cognate detection algorithms which compare
-words in their entirety (List 2014, <a href=":bib:Turchin2010">Turchin et al. 2010</a>). Given the frequency of compound words
+words in their entirety (List 2014, <a href="http://bibligraphy.lingpy.org?key=Turchin2010">Turchin et al. 2010</a>). Given the frequency of compound words
 in South-East Asian languages, it is not surprising
 that the algorithms perform much worse on diverse
 South-East Asian language families, than they perform on other language families where compound-
@@ -11822,7 +11822,7 @@ ing is less frequent (List 2014:197f).</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="2-LingPy-Algorithm-for-Partial-Cognate-Detection">2 LingPy Algorithm for Partial Cognate Detection<a class="anchor-link" href="#2-LingPy-Algorithm-for-Partial-Cognate-Detection">&#182;</a></h2><p>The crucial idea behind the algorithm for partial cognate detection in LingPy is what could be called a "constrained-based partitioning". While the "normal" partitioning algorithms for cognate set partitioning do not work with constraints in any form, but simply derive a partition for a given set of input words from the pairwise distances between all words in a given meaning slot, the constrained-based partitioning adds specific constraints when constructing the distance matrix (or the network), based on the structure of the input data. If these constraints (called "filter rules" in the original paper by <a href=":bib:List2016g">List et al. 2016</a>) are applied, the algorithm either refuses to draw a link between two nodes in the network corresponding to the matrix, or the distance score in the matrix is artificially set to its maximum of 1.0. The filtering rules themselves are necessary to account for certain properties of partial cognate detection, since we know well that certain conditions in which an unconstrained algorithm could erroneously cluster two words together, might otherwise not occur.</p>
+<h2 id="2-LingPy-Algorithm-for-Partial-Cognate-Detection">2 LingPy Algorithm for Partial Cognate Detection<a class="anchor-link" href="#2-LingPy-Algorithm-for-Partial-Cognate-Detection">&#182;</a></h2><p>The crucial idea behind the algorithm for partial cognate detection in LingPy is what could be called a "constrained-based partitioning". While the "normal" partitioning algorithms for cognate set partitioning do not work with constraints in any form, but simply derive a partition for a given set of input words from the pairwise distances between all words in a given meaning slot, the constrained-based partitioning adds specific constraints when constructing the distance matrix (or the network), based on the structure of the input data. If these constraints (called "filter rules" in the original paper by <a href="http://bibligraphy.lingpy.org?key=List2016g">List et al. 2016</a>) are applied, the algorithm either refuses to draw a link between two nodes in the network corresponding to the matrix, or the distance score in the matrix is artificially set to its maximum of 1.0. The filtering rules themselves are necessary to account for certain properties of partial cognate detection, since we know well that certain conditions in which an unconstrained algorithm could erroneously cluster two words together, might otherwise not occur.</p>
 <p>The partial cognate detection algorithm in LingPy is similar to the normal cognate detection algorithm. The only difference is that it does not cluster all words in a given meaning slot into partitions, but also all morphemes. That means that each word is represented by at least one, but potentially more than one morpheme, and that the morphemes constituting one word can be assigned to different cognate sets.</p>
 <p>The filter rules that are currently used in LingPy's partial cognate detection algorithm are simple:</p>
 <ol>
