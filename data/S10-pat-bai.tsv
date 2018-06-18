@@ -1,0 +1,156 @@
+ID	FREQUENCY	Dashi	Ega	Enqi	Gongxing	Jinman	Jinxing	Mazhelong	Tuolo	Zhoucheng	COGIDS	CONCEPTS
+1	1	ʈʂʰ	Ø	tsʰ	Ø	Ø	tsʰ	Ø	ʐ	tsʰ	412:0	sleep
+2	1	ʈʂʰ	Ø	tɕ	Ø	Ø	tsʰ	Ø	ʐ	tsʰ	227:0	lie
+3	1	ʈʂʰ	tɕʰ	tʰ	tʰ	ʈʰ	tsʰ	Ø	tʰ	tsʰ	370:0	red
+4	1	ʈʂʰ	tɕ	tɕ	ʈʂ	tɕ	ts	ts	tɕ	ts	514:0	tooth
+1	4	ʈʂ	dʑ	d	ɖʐ	ɖ	ts	dz	d	ts	28:0, 33:0, 158:0, 530:0	bark / good / tree
+2	1	ʈʂ	tɕ	tɕ	ts	tɕ	ts	ts	ʈʂ	ts	406:0	seed
+3	1	ʈʂ	tɕ	tɕ	dz	tɕ	ts	dz	ʐ	ts	621:0	worm
+4	1	ʈʂ	tɕ	t	dʑ	ʈ	ts	ts	d	ts	236:0	long
+5	1	ʈʂ	tɕ	t	dz	ʈ	ts	tsʰ	d	ts	436:0	stone
+6	1	ʈʂ	t	t	d	ʈ	ts	tsʰ	d	ts	511:0	tongue
+7	1	ʈʂ	dʑ	ɖʐ	dz	dʑ	ts	ts	ʐ	ts	177:0	heavy
+8	1	ʈʂ	dʑ	Ø	ɖʐ	Ø	ts	z	Ø	ts	426:0	stand
+9	1	ʈʂ	ts	ts	ʈʂ	ʈʂ	ts	ts	ʈʂ	ts	140:0	fat
+1	2	ʂʰ	s	ɕ	s	ʂ	s	s	ʂ	s	27:0, 217:0	ashes / leaf
+2	1	ʂʰ	ɕ	ɕ	s	ɕ	s	s	ɕ	s	386:0	sand
+3	1	ʂʰ	ɕ	ɕ	ʂ	ɕ	s	s	ɕ	s	165:0	hand
+1	3	ʂ	x	x	ɕ	x	s	s	s	s	67:0, 240:0, 393:0	burn / man / say
+2	1	ʂ	ɕ	Ø	ʈʂ	Ø	s	s	ɕ	s	78:0	claw (nail)
+3	1	ʂ	s	ɕ	s	ʂ	s	s	ɕ	s	275:0	mountain
+1	2	ɲ	ɲ	ŋ	ŋ	ɲ	ŋ	ŋ	ŋ	ɲ	114:0, 540:0	ear / we
+1	3	ɣ	ɥ	Ø	w	-	ɣ	ɣ	w	Ø	95:0, 281:1, 383:0	come / name / round
+1	1	ɕʰ	ɕ	x	χ	ɕ	ɕ	ɕ	ɕ	ɕ	187:0	kill
+2	1	ɕʰ	s	s	ɕ	s	ɕ	ɕ	ɕ	ɕ	313:0	new
+1	4	ɕ	ɕ	ɕ	ɕ	ɕ	ɕ	ɕ	ɕ	ɕ	162:0, 237:0, 459:0, 539:0	hair / louse / swim / water
+2	2	ɕ	s	s	ɕ	s	ɕ	ɕ	ɕ	ɕ	176:0, 423:0	heart / smoke
+3	1	ɕ	ɕ	ɕ	s	ɕ	ɕ	ɕ	ɕ	ɕ	435:0	star
+4	1	ɕ	s	s	ɕ	ɕ	ɕ	ɕ	ɕ	ɕ	103:0	die
+1	5	ŋ	ŋ	ɴ	ŋ	ŋ	Ø	ŋ	ŋ	ŋ	1:0, 46:0, 108:2, 533:0, 624:0	I / bite / drink / walk(go) / yellow
+2	5	ŋ	ŋ	Ø	n	Ø	-	n	n	-	73:2, 111:2, 394:1, 413:0, 589:2	burn / ear / see / sleep / who
+3	2	ŋ	-	-	ŋ	-	-	ŋ	ŋ	-	104:3, 406:2	dog / seed
+4	2	ŋ	-	-	ŋ	ŋ	-	ŋ	ŋ	w	460:2, 531:2	swim / two
+5	1	ŋ	-	-	-	Ø	Ø	Ø	-	Ø	389:2	say
+1	3	Ø	j	-	Ø	-	Ø	-	Ø	-	113:3, 324:2, 608:2	ear / nose / woman
+2	3	Ø	f	Ø	Ø	f	Ø	f	Ø	Ø	68:0, 143:0, 424:0	burn / fire / smoke
+3	3	Ø	q	qʰ	kʰ	Ø	k	p	Ø	p	116:0, 168:0, 518:0	ear / head / tooth
+4	2	Ø	Ø	Ø	tsʰ	tɕ	t	t	ʈʂʰ	t	102:0, 216:0	come / know
+5	2	Ø	ts	ts	tɕ	ts	Ø	tsʰ	tɕ	Ø	385:0, 605:0	salt / wind
+6	2	Ø	k	q	q	k	k	p	q	Ø	86:0, 278:0	cloud / mouth
+7	2	Ø	tɕ	ts	t	tɕ	Ø	k	Ø	Ø	113:0, 325:0	ear / nose
+8	1	Ø	Ø	Ø	ɲ	Ø	n	Ø	n	ɲ	589:0	who
+9	1	Ø	d	tɕ	tsʰ	d	ts	s	tɕʰ	Ø	9:0	all
+10	1	Ø	kʰ	Ø	Ø	qʰ	Ø	Ø	Ø	Ø	323:0	nose
+11	1	Ø	tɕ	tɕ	ts	tɕ	tɕ	Ø	tɕ	tɕ	277:0	mouth
+12	1	Ø	w	w	w	w	w	-	w	Ø	385:1	salt
+13	1	Ø	Ø	ɕ	Ø	Ø	Ø	ɕ	ɕ	tsʰ	462:0	swim
+14	1	Ø	p	Ø	Ø	Ø	Ø	kʰ	Ø	Ø	69:0	burn
+15	1	Ø	Ø	Ø	ʔ	Ø	Ø	-	Ø	Ø	108:0	drink
+16	1	Ø	Ø	Ø	ɣ	Ø	Ø	Ø	Ø	w	489:0	that
+17	1	Ø	tɕʰ	tɕʰ	tsʰ	tɕʰ	Ø	Ø	tɕʰ	Ø	161:0	green
+18	1	Ø	-	d	-	d	Ø	Ø	-	Ø	427:0	stand
+19	1	Ø	ɕ	ɕ	ɕ	ɕ	Ø	s	Ø	Ø	18:0	ashes
+20	1	Ø	Ø	Ø	Ø	Ø	Ø	m	-	Ø	274:0	moon
+21	1	Ø	x	Ø	ʐ	ʐ	Ø	Ø	Ø	Ø	41:0	belly
+22	1	Ø	Ø	ɕ	Ø	ɕ	Ø	ɕ	x	Ø	318:0	night
+23	1	Ø	z	z	ʐ	ʐ	Ø	Ø	ʐ	Ø	358:0	rain
+24	1	Ø	p	v	Ø	Ø	Ø	p	b	Ø	486:0	that
+25	1	Ø	q	q	q	q	Ø	Ø	q	kʰ	460:0	swim
+26	1	Ø	-	-	-	-	j	Ø	-	-	277:2	mouth
+27	1	Ø	-	ɥ	ɥ	-	Ø	Ø	Ø	Ø	139:1	far
+1	1	z	z	ts	z	z	s	z	z	z	155:0	give
+1	4	x	x	x	x	kʰ	x	x	x	x	16:0, 142:0, 405:0, 422:0	ashes / fire / see / smoke
+2	2	x	x	χ	χ	x	x	x	x	x	51:0, 156:0	black / good
+3	1	x	Ø	Ø	Ø	Ø	ɣ	Ø	Ø	Ø	338:0	not
+4	1	x	x	χ	qʰ	x	x	s	h	Ø	561:0	what
+1	17	w	w	w	w	w	w	w	w	w	16:1, 52:1, 116:1, 133:1, 138:1, 142:1, 276:1, 278:1, 323:1, 357:0, 380:1, 393:1, 422:1, 518:1, 554:1, 605:1, 622:1	ashes / blood / ear / eye / far / fire / mouth / nose / rain / round / say / smoke / tooth / we / wind / year
+2	4	w	-	-	-	-	w	-	-	w	44:2, 114:2, 188:1, 498:3	bird / ear / knee / thin
+3	3	w	w	w	w	w	w	w	-	w	53:1, 102:1, 476:1	bone / come / tail
+4	3	w	-	-	-	-	w	-	-	-	43:2, 153:2, 386:3	big / foot / sand
+5	2	w	-	-	Ø	w	Ø	-	v	f	113:1, 321:0	ear / nose
+6	2	w	w	w	w	-	w	w	w	w	104:1, 263:1	dog / moon
+7	1	w	w	w	-	-	w	-	w	w	436:2	stone
+1	1	tʰ	tɕ	tʰ	tʰ	ʈʰ	tʰ	tʰ	tʰ	tʰ	377:0	road
+2	1	tʰ	t	t	Ø	t	ts	t	Ø	ts	291:0	neck
+1	1	tɕʰ	Ø	Ø	dz	Ø	tɕʰ	Ø	Ø	tɕʰ	159:0	good
+2	1	tɕʰ	tɕʰ	tɕʰ	tɕʰ	tɕʰ	tɕʰ	tɕʰ	tɕʰ	tɕʰ	169:0	hear
+1	3	tɕ	ts	ts	dz	ʈʂ	ts	p	z	s	13:0, 126:0, 389:0	all / ear / say
+2	1	tɕ	tɕ	dʑ	dʑ	dʑ	tɕ	t	ʑ	tɕ	128:0	earth
+3	1	tɕ	tsʰ	tɕ	dʑ	tsʰ	tɕ	tɕ	Ø	tɕ	282:0	near
+4	1	tɕ	t	t	t	t	tɕ	t	tɕ	tɕ	253:0	many
+1	1	tsʰ	tɕʰ	tsʰ	tsʰ	tɕʰ	tsʰ	tsʰ	tsʰ	tsʰ	407:0	short
+1	5	ts	ts	ts	ts	ts	ts	ts	ts	ts	44:0, 59:0, 241:0, 276:0, 609:0	bird / bone / man / mouth / woman
+2	4	ts	tɕ	qʰ	ts	tɕ	ts	ts	ɕ	ts	238:0, 324:0, 410:0, 604:0	man / nose / skin / wind
+3	1	ts	ts	ts	ts	ts	ts	ts	Ø	t	190:0	knee
+1	9	t	t	t	t	t	t	ts	t	t	111:0, 138:0, 139:0, 378:0, 397:0, 414:0, 474:0, 488:0, 500:0	ear / far / root / see / sleep / tail / that / this
+2	4	t	tɕ	t	d	ʈ	t	t	d	t	54:0, 166:0, 205:0, 509:0	bone / head / knee / this
+3	2	t	d	d	d	d	t	d	d	t	43:0, 239:0	big / man
+4	2	t	t	t	d	ʈ	t	t	d	t	163:0, 581:0	hair / who
+5	1	t	Ø	t	t	t	Ø	Ø	d	Ø	322:0	nose
+1	3	sʰ	s	s	s	s	s	s	s	s	52:0, 421:0, 622:0	blood / small / year
+1	1	s	s	Ø	ʈʂ	s	s	s	ʈʂ	z	212:0	know
+2	1	s	Ø	s	ɕ	Ø	s	tsʰ	Ø	s	457:0	swim
+3	1	s	s	s	s	s	s	s	s	s	132:0	egg
+1	6	p	Ø	p	b	l	p	p	b	p	29:0, 384:0, 409:0, 458:0, 532:0, 603:0	bark / salt / skin / swim / walk(go) / wind
+2	4	p	p	p	b	p	p	pʰ	b	p	60:0, 332:0, 498:0, 578:0	breast / nose / thin / white
+3	2	p	ɣ	ʁ	x	ʈʂ	k	x	Ø	Ø	8:0, 542:0	all / we
+4	1	p	Ø	Ø	Ø	Ø	p	pʰ	p	p	314:0	night
+5	1	p	p	ɲ	j	p	p	p	p	p	515:0	tooth
+1	11	n	-	-	n	-	n	n	n	-	126:3, 176:2, 274:3, 282:2, 313:2, 332:3, 353:2, 383:2, 448:2, 605:3, 614:2	ear / heart / moon / near / new / nose / person / round / sun / wind / woman
+2	3	n	n	n	n	n	n	n	n	n	484:0, 502:0, 510:0	that / this / thou
+3	2	n	ŋ	ŋ	ŋ	ŋ	Ø	Ø	ŋ	ŋ	84:0, 145:0	cloud / fish
+4	1	n	-	-	n	-	n	-	n	-	132:2	egg
+5	1	n	-	Ø	ŋ	Ø	n	-	Ø	Ø	110:2	ear
+6	1	n	-	-	-	-	n	n	n	-	423:2	smoke
+7	1	n	Ø	Ø	Ø	Ø	n	n	-	-	138:3	far
+8	1	n	Ø	Ø	Ø	Ø	-	Ø	n	Ø	537:2	warm
+1	12	m	m	m	m	m	m	m	m	m	85:0, 141:0, 154:0, 164:0, 262:0, 280:0, 294:0, 337:0, 379:0, 420:0, 475:0, 580:0	cloud / feather / full / hair / moon / name / neck / not / root / sleep / tail / who
+1	7	l	ɲ	ɲ	ɲ	ɲ	Ø	ɲ	ɲ	ɲ	264:0, 281:0, 354:0, 449:0, 538:0, 607:0, 608:0	moon / name / person / sun / warm / woman
+2	4	l	l	Ø	Ø	l	l	l	Ø	l	17:0, 160:0, 228:0, 506:0	ashes / green / lie / this
+1	1	kʰ	tsʰ	tsʰ	ʈʂʰ	tɕʰ	kʰ	tɕʰ	ʈʂʰ	kʰ	425:0	snake
+2	1	kʰ	qʰ	qʰ	qʰ	qʰ	kʰ	kʰ	qʰ	kʰ	104:0	dog
+3	1	kʰ	qʰ	qʰ	q	k	kʰ	k	qʰ	kʰ	188:0	knee
+1	10	k	q	q	q	q	k	k	q	k	79:0, 109:0, 178:0, 193:0, 200:0, 235:0, 279:0, 292:0, 395:0, 476:0	claw (nail) / dry / horn / knee / liver / mouth / neck / see / tail
+2	4	k	k	k	k	k	k	k	k	k	97:0, 153:0, 408:0, 531:0	come / foot / sit / two
+3	1	k	q	q	ɢ	q	k	k	Ø	k	254:0	meat
+4	1	k	q	q	q	q	k	k	k	k	53:0	bone
+5	1	k	k	k	ɡ	k	k	k	k	k	94:0	cold
+6	1	k	-	x	x	x	k	Ø	tɕ	k	315:0	night
+1	20	j	j	j	j	j	j	j	j	j	15:0, 33:1, 73:0, 96:0, 110:0, 131:0, 158:1, 274:1, 280:1, 332:1, 351:0, 353:0, 410:2, 427:1, 459:2, 536:0, 537:0, 604:2, 606:0, 614:0	all / bark / burn / come / ear / eat / good / moon / name / nose / one / person / skin / stand / swim / walk(go) / warm / wind / woman
+2	2	j	Ø	Ø	Ø	Ø	-	j	ɥ	-	126:1, 603:1	ear / wind
+3	2	j	Ø	Ø	Ø	Ø	j	Ø	j	-	384:1, 509:1	salt / this
+4	1	j	Ø	Ø	Ø	Ø	jː	Ø	jː	Ø	448:0	sun
+5	1	j	-	-	Ø	Ø	-	-	-	Ø	581:1	who
+6	1	j	Ø	Ø	Ø	Ø	-	w	j	-	54:1	bone
+7	1	j	j	j	-	j	j	j	j	j	539:2	water
+8	1	j	j	j	j	j	j	-	j	j	169:1	hear
+1	2	f	Ø	f	pf	f	f	p	f	f	40:0, 151:0	belly / fly
+1	8	-	-	-	w	-	-	-	-	-	178:1, 216:1, 275:1, 407:1, 408:1, 488:1, 498:1, 621:1	horn / know / mountain / short / sit / that / thin / worm
+2	7	-	-	-	n	-	n	-	ŋ	-	158:3, 161:2, 169:3, 280:3, 384:3, 435:2, 624:2	good / green / hear / name / salt / star / yellow
+3	5	-	-	-	ŋ	-	-	ŋ	ŋ	-	109:2, 116:3, 235:2, 500:2, 625:2	dry / ear / liver / this / yellow
+4	4	-	-	j	-	-	-	-	-	-	154:1, 236:1, 262:1, 370:1	full / long / moon / red
+5	3	-	-	-	n	-	-	ŋ	n	w	159:2, 385:3, 535:2	good / salt / walk(go)
+6	3	-	-	-	-	-	-	n	n	-	275:3, 354:2, 603:3	mountain / person / wind
+7	3	-	kʰ	ʁ	ʁ	ŋ	-	ɣ	Ø	-	380:0, 535:0, 625:0	round / walk(go) / yellow
+8	3	-	-	j	-	-	-	-	j	-	163:1, 462:2, 530:1	hair / swim / tree
+9	3	-	-	-	-	-	n	-	-	-	212:2, 227:2, 412:2	know / lie / sleep
+10	2	-	-	-	ŋ	-	-	-	ŋ	-	177:2, 292:2	heavy / neck
+11	2	-	-	j	j	-	-	-	-	-	164:1, 511:1	hair / tongue
+12	2	-	-	-	n	j	-	-	n	-	133:3, 139:3	eye / far
+13	2	-	ŋ	-	-	ŋ	-	ŋ	-	-	263:0, 554:0	moon / we
+14	1	-	-	w	-	-	-	-	-	-	166:3	head
+15	1	-	-	-	-	-	n	-	ŋ	Ø	561:2	what
+16	1	-	w	w	-	-	-	-	-	-	377:2	road
+17	1	-	-	-	-	-	-	-	ŋ	-	188:3	knee
+18	1	-	-	-	-	-	-	-	j	-	166:1	head
+19	1	-	Ø	Ø	n	Ø	Ø	-	-	Ø	395:2	see
+20	1	-	-	-	-	-	-	w	-	-	425:2	snake
+21	1	-	-	-	-	-	w	n	-	-	510:2	thou
+22	1	-	-	-	w	-	-	-	w	-	386:1	sand
+23	1	-	-	-	w	-	-	ŋ	-	w	236:3	long
+24	1	-	-	-	-	-	-	ŋ	-	-	178:3	horn
+25	1	-	ŋ	ŋ	-	Ø	-	ŋ	-	-	133:0	eye
+26	1	-	-	-	Ø	Ø	w	-	-	Ø	581:3	who
+27	1	-	Ø	j	j	j	Ø	Ø	j	Ø	322:1	nose
+28	1	-	-	j	-	j	-	-	-	-	141:1	feather
+29	1	-	-	-	ŋ	-	-	-	-	-	263:3	moon
